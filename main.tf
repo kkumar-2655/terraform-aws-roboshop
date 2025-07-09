@@ -93,7 +93,7 @@ resource "aws_launch_template" "main" {
   instance_type = "t3.micro"
   vpc_security_group_ids = [local.sg_id]
   update_default_version = true # each time you update, new version will become default
-   instance_market_options {
+  instance_market_options {
     market_type = "spot"
     spot_options {
       instance_interruption_behavior = "terminate"
