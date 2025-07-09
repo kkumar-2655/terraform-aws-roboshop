@@ -7,11 +7,11 @@ variable "environment" {
 }
 
 variable "zone_id" {
-    default = "Z032558618100M4EJX8X4"
+    default = "Z02622157IVZUWOPNGMV"
 }
 
 variable "zone_name" {
-    default = "daws84skiran.site"
+    default = "daws84skiran.store"
 }
 
 variable "component" {
