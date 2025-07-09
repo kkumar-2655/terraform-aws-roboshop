@@ -136,7 +136,7 @@ resource "aws_launch_template" "main" {
 resource "aws_autoscaling_group" "main" {
   name                 = "${var.project}-${var.environment}-${var.component}"
   desired_capacity   = 1
-  max_size           = 1
+  max_size           = 10
   min_size           = 1
   target_group_arns = [aws_lb_target_group.main.arn]
   vpc_zone_identifier  = local.private_subnet_ids
